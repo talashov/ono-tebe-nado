@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
   <header class="header">
 
     <nav class="header__menu">
@@ -40,12 +39,11 @@
     </address>
 
   </header>
-
   <main class="main">
 
-    <div class="overlay">
-      <section class="cover">
 
+    <section class="cover">
+      <div class="overlay">
         <h1 class="cover__title">
           <span class="aligned-text">о<span class="letter-spacing-extended">но</span>
           </span>
@@ -60,9 +58,9 @@
           <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
           <button class="bet-button">Сделать ставку</button>
         </div>
+      </div>
+    </section>
 
-      </section>
-    </div>
 
     <section class="lots">
 
@@ -73,9 +71,15 @@
         <li class="lots__card-list-item">
           <a class="card-link" href="#">
             <article class="card card_type_film">
-              <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
-              <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не
-                знали, что режиссёр — Пол Томас Андерсон?</p>
+              <div class="overlay">
+                <div class="card__content">
+                  <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+                  <p class="card__text">
+                    Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы
+                    не знали, что режиссёр — Пол Томас Андерсон?
+                  </p>
+                </div>
+              </div>
             </article>
           </a>
         </li>
@@ -83,11 +87,17 @@
         <li class="lots__card-list-item">
           <a class="card-link" href="#">
             <article class="card card_type_book">
-              <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
-              <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на
-                древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная
-                с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на
-                «Улисса» Джеймса Джойса?</p>
+              <div class="overlay">
+                <div class="card__content">
+                  <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                  <p class="card__text">
+                    Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на
+                    древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы,
+                    начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы
+                    поставили на «Улисса» Джеймса Джойса?
+                  </p>
+                </div>
+              </div>
             </article>
           </a>
         </li>
@@ -95,10 +105,16 @@
         <li class="lots__card-list-item">
           <a class="card-link" href="#">
             <article class="card card_type_picture">
-              <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
-              <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
-                инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали,
-                что это — одна из революционных работ Кандинского?</p>
+              <div class="overlay">
+                <div class="card__content">
+                  <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                  <p class="card__text">
+                    Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
+                    инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не
+                    знали, что это — одна из революционных работ Кандинского?
+                  </p>
+                </div>
+              </div>
             </article>
           </a>
         </li>
@@ -143,7 +159,6 @@
     </section>
 
   </main>
-
   <footer class="footer">
 
     <address class="address">
@@ -169,25 +184,24 @@
     <ul class="footer__social-list">
       <li class="footer__social-list-item">
         <a class="footer__social-link" href="#">
-          <img class="footer__social-icon" src="/images/yt.svg" alt="Логотип YouTube">
+          <img class="footer__social-icon" src="./images/yt.svg" alt="Логотип YouTube">
         </a>
       </li>
 
       <li class="footer__social-list-item">
         <a class="footer__social-link" href="#">
-          <img class="footer__social-icon" src="/images/vk.svg" alt="Логотип ВКонтакте">
+          <img class="footer__social-icon" src="./images/vk.svg" alt="Логотип ВКонтакте">
         </a>
       </li>
 
       <li class="footer__social-list-item">
         <a class="footer__social-link" href="#">
-          <img class="footer__social-icon" src="/images/pinterest.svg" alt="Логотип Pinterest">
+          <img class="footer__social-icon" src="./images/pinterest.svg" alt="Логотип Pinterest">
         </a>
       </li>
     </ul>
 
   </footer>
-
 </body>
 
 </html>
