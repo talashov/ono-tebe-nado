@@ -65,6 +65,8 @@ body {
     max-width: 237px;
 }
 
+.main {}
+
 /* ==== COVER ==== */
 
 .cover {
@@ -244,9 +246,14 @@ body {
     text-decoration-thickness: 1px;
 }
 
+.letter-spacing-card {
+    letter-spacing: 0.13em;
+}
+
 /* ==== ABOUT ==== */
 
 .about {
+    height: 595px;
     margin-bottom: 180px;
 }
 
@@ -265,13 +272,14 @@ body {
 }
 
 .about__logo-image {
-    padding: 65px 47px 62px 51px;
+    padding: 64px 45px 0px 47px;
 }
 
 .about__content {
     width: 693px;
     height: 449px;
-    padding-top: 133px;
+    padding-top: 136px;
+    padding-left: 8px;
 }
 
 .about__title {
@@ -299,10 +307,11 @@ body {
 
 .footer {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 88px;
-    padding-top: 180px;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1000px;
+    height: 98px;
+    margin: 0 50px 88px 50px;
 }
 
 /* .address {} */
