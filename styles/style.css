@@ -1,14 +1,10 @@
 /* место для вашего кода */
 
-body {
-    font-family: Raleway, serif;
-}
-
 .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
-    margin: 92px 24px;
+    padding: 92px 24px;
 }
 
 .header__menu {
@@ -37,22 +33,23 @@ body {
     text-decoration-thickness: 1px;
 }
 
-.header__logo {
-    padding-right: 149px;
-}
-
 .header__logo-image {
     width: 139px;
     height: 105px;
 }
 
 .address {
-    font-size: 18px;
     font-weight: 400;
+    font-size: 18px;
     font-style: normal;
     line-height: 135%;
     letter-spacing: 0.01em;
-    padding-right: 28px;
+    max-width: 240px;
+}
+
+.header__address {
+    margin-right: 28px;
+    justify-self: end;
 }
 
 .address__link {
@@ -61,31 +58,26 @@ body {
     text-decoration-thickness: 1px;
 }
 
-.header__address {
-    max-width: 237px;
-}
-
 /* ==== COVER ==== */
 
 .cover {
     position: relative;
     width: 1100px;
-    height: 758px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-bottom: 179px;
+    padding-bottom: 758px;
 }
 
 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
+    z-index: 2;
 }
 
 .cover__title {
@@ -94,7 +86,7 @@ body {
     line-height: 115%;
     text-transform: uppercase;
     color: #fff;
-    padding: 165px 50px 126px 50px;
+    padding: 165px 50px 134px 50px;
 }
 
 .aligned-text {
@@ -104,13 +96,15 @@ body {
 
 .aligned-text_center {
     text-align: center;
-    padding-top: 12px;
+    padding-top: 22px;
+    line-height: 100%;
     letter-spacing: 0.3em;
 }
 
 .aligned-text_right {
     text-align: right;
-    padding-top: 7px;
+    padding-top: 20px;
+    line-height: 100%;
     letter-spacing: 0.3em;
 }
 
@@ -167,18 +161,18 @@ body {
 
 .lots__card-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 25px;
     flex-wrap: wrap;
     list-style-type: none;
     margin-bottom: 30px;
-
+    padding: 0 24px;
 }
 
 .lots__card-list-item {
     position: relative;
     width: 334px;
-    height: 563px;
+    min-height: 563px;
 }
 
 .card-link {
@@ -187,10 +181,15 @@ body {
 
 .card {
     width: 334px;
-    height: 563px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .card__content {
+    position: absolute;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -200,23 +199,14 @@ body {
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .card__title {
@@ -251,7 +241,6 @@ body {
 /* ==== ABOUT ==== */
 
 .about {
-    height: 595px;
     margin-bottom: 180px;
 }
 
@@ -275,7 +264,6 @@ body {
 
 .about__content {
     width: 693px;
-    height: 449px;
     padding-top: 136px;
     padding-left: 8px;
 }
@@ -308,20 +296,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     width: 1000px;
-    height: 98px;
     margin: 0 50px 88px 50px;
-}
-
-/* .address {} */
-
-/* .address__link {} */
-
-.footer__address {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 135%;
-    letter-spacing: 0.01em;
-    width: 237px;
 }
 
 .footer__menu {
@@ -333,8 +308,6 @@ body {
 .footer__menu-list {
     list-style-type: none;
 }
-
-/* .footer__menu-list-item {} */
 
 .footer__menu-link {
     text-underline-offset: 4px;
@@ -350,10 +323,6 @@ body {
     gap: 48px;
     list-style-type: none;
 }
-
-/* .footer__social-list-item {} */
-
-/* .footer__social-link {} */
 
 .footer__social-icon {
     width: 48px;
