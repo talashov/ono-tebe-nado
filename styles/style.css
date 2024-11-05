@@ -68,7 +68,6 @@
     background-position: center;
     background-size: cover;
     margin-bottom: 179px;
-    padding-bottom: 758px;
 }
 
 .overlay {
@@ -81,6 +80,8 @@
 }
 
 .cover__title {
+    position: relative;
+    z-index: 3;
     font-weight: 700;
     font-size: 100px;
     line-height: 115%;
@@ -117,6 +118,8 @@
 }
 
 .cover__description {
+    position: relative;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -185,15 +188,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.card__content {
-    position: absolute;
-    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
     padding: 51px 40px 48px 40px;
 }
 
@@ -210,6 +207,8 @@
 }
 
 .card__title {
+    position: relative;
+    z-index: 3;
     font-weight: 700;
     font-size: 22px;
     line-height: 120%;
@@ -219,6 +218,8 @@
 }
 
 .card__text {
+    position: relative;
+    z-index: 3;
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
